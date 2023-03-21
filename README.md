@@ -8,7 +8,7 @@ https://gitexplorer1.netlify.app/
 
 #### Example:
 
-Clone down this [repository](https://github.com/cleandevcode/git-explorer). You will need `node` and `npm` installed globally on your machine.
+Clone down this [repository](https://github.com/cleandevcode/git-explorer). You will need `node` and `npm` or `yarn` installed globally on your machine.
 
 Installation:
 

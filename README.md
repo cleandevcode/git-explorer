@@ -4,6 +4,10 @@
 
 https://gitexplorer1.netlify.app/
 
+## Loom video
+
+https://www.loom.com/share/d4ca8fdf677740eb827177ac543969b5
+
 ## Installation and Setup Instructions
 
 #### Example:
@@ -13,10 +17,6 @@ Clone down this [repository](https://github.com/cleandevcode/git-explorer). You 
 Installation:
 
 `yarn`
-
-To Run Test Suite:
-
-`yarn test`
 
 To Start Server:
 

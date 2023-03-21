@@ -31,6 +31,12 @@ function App() {
           const temp = res.data.items.slice(0, 5);
           setUsers(temp);
         } else setUsers(res.data.items);
+        if (!res.data.items.length)
+          toast({
+            title: `No matched results`,
+            status: "warning",
+            position: "top-right",
+          });
       })
       .catch((err) => {
         console.log(`Error occured while getting Users`, err);

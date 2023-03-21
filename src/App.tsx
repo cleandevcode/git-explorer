@@ -27,10 +27,10 @@ function App() {
     axios
       .get(apiUrl)
       .then((res) => {
-        if (res.data && res.data.items?.length > 5) {
+        if (res.data.items?.length > 5) {
           const temp = res.data.items.slice(0, 5);
           setUsers(temp);
-        }
+        } else setUsers(res.data.items);
       })
       .catch((err) => {
         console.log(`Error occured while getting Users`, err);

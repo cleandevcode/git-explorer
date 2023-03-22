@@ -58,7 +58,7 @@ function App() {
   }, [username]);
 
   return (
-    <Container maxW="xl">
+    <Container maxW="xl" maxH="100vh" h="100vh" overflow="auto" id="container">
       <Box
         padding="4"
         alignItems="center"
@@ -67,6 +67,7 @@ function App() {
       >
         <InputGroup>
           <Input
+            id="input"
             placeholder="Enter username"
             value={username}
             onChange={(e) => setUserName(e.target.value)}
@@ -90,6 +91,7 @@ function App() {
           )}
         </InputGroup>
         <Button
+          id="searchBtn"
           colorScheme="teal"
           variant="solid"
           width="full"

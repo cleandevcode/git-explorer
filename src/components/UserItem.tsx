@@ -47,7 +47,12 @@ const UserItem: React.FC<{ user: User }> = ({ user }) => {
 
   return (
     <Container mt={2}>
-      <Button width="full" justifyContent="space-between" onClick={handleOpen}>
+      <Button
+        width="full"
+        justifyContent="space-between"
+        onClick={handleOpen}
+        id={`userItem-${user?.login}`}
+      >
         <HStack>
           <Avatar src={user?.avatar_url} size="xs" />
           <Text mr="2">{user?.name || user?.login}</Text>
@@ -77,8 +82,10 @@ const UserItem: React.FC<{ user: User }> = ({ user }) => {
           )}
           {!loading && repos?.length > 0 && (
             <Box marginLeft="3">
-              {repos.map((item) => (
-                <RepoItem key={item.id} repo={item} />
+              {repos.map((item, idx) => (
+                <div key={item.id} id={`repoItem${idx}`}>
+                  <RepoItem repo={item} />
+                </div>
               ))}
             </Box>
           )}

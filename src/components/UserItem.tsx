@@ -51,7 +51,7 @@ const UserItem: React.FC<{ user: User }> = ({ user }) => {
         width="full"
         justifyContent="space-between"
         onClick={handleOpen}
-        id={`userItem-${user?.login}`}
+        id={`userItem_${user?.login}`}
       >
         <HStack>
           <Avatar src={user?.avatar_url} size="xs" />

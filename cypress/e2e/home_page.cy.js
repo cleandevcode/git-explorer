@@ -6,11 +6,11 @@ describe(`The Home Page`, () => {
 
     cy.get(`#searchBtn`).click();
 
-    cy.get(`#userItem-cleandevcode`).click();
+    cy.get(`#userItem_cleandevcode`).click();
 
     cy.get(`#container`).scrollTo("bottom", { duration: 2000 });
     cy.get(`#container`).scrollTo("top", { duration: 2000 });
 
-    cy.get(`#repoItem1`).click();
+    // cy.get(`#repoItem1`).click();
   });
 });

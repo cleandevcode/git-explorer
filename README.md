@@ -36,3 +36,4 @@ To Visit App:
 - TypeScript
 - Chakra UI
 - Axios
+- Cypress

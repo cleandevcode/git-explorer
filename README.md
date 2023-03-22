@@ -22,6 +22,10 @@ To Start Server:
 
 `yarn start`
 
+To Test Server:
+
+`yarn run cypress`
+
 To Visit App:
 
 `http://localhost:3000`
